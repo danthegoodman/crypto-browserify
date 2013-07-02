@@ -22,6 +22,10 @@ var hexcase = 0;  /* hex output format. 0 - lowercase; 1 - uppercase        */
 var b64pad  = ""; /* base-64 pad character. "=" for strict RFC compliance   */
 var chrsz   = 8;  /* bits per input character. 8 - ASCII; 16 - Unicode      */
 
+exports.strictRfcBase64 = function(b){ b64pad = b ? "=" : ""; }
+exports.uppercaseHex = function(b){ hexcase = b ? 1 : 0; }
+exports.unicodeCharSize = function(b){ chrsz = b ? 16 : 8; }
+
 /*
  * These are the functions you'll usually want to call
  * They take string arguments and return either hex or base-64 encoded strings
