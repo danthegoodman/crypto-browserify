@@ -7,11 +7,13 @@ var algorithms = {
   sha1: {
     hex: sha.hex_sha1,
     binary: sha.b64_sha1,
+    base64: sha.b64_sha1,
     ascii: sha.str_sha1
   },
   md5: {
     hex: md5.hex_md5,
     binary: md5.b64_md5,
+    base64: md5.b64_md5,
     ascii: md5.any_md5
   }
 }
